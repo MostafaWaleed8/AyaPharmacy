@@ -1,0 +1,179 @@
+nav {
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  background: #19bcdb;
+  color: #fff;
+}
+
+nav .container {
+  height: inherit;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .container .logo a {
+  text-decoration: none;
+  color: #fff;
+}
+
+nav .container .logo a span {
+  color: brown;
+}
+
+nav .container ul {
+  display: flex;
+  list-style: none;
+}
+
+nav .container ul a {
+  color: #fff;
+  margin: 0 1rem;
+  text-decoration: none;
+}
+
+#hero {
+  height: 100vh;
+  background: url("https://cdn2.howtostartanllc.com/images/business-ideas/business-idea-images/Pharmacy.jpg")
+    no-repeat top center;
+  background-size: 100% 100%;
+}
+
+#hero.flex {
+  justify-content: center;
+  align-items: center;
+}
+#hero .container .hero-text-wrapper {
+  padding: 1.5rem;
+  border-radius: 5px;
+  text-align: center;
+  background: rgba(0, 213, 255, 0.4);
+}
+
+#hero .container .hero-text-wrapper h3 {
+  font-size: 1.5rem;
+  color: #fff;
+}
+#hero .container .hero-text-wrapper h1 {
+  border-radius: 5px;
+  padding: 1rem;
+  font-size: 3rem;
+  color: #fff;
+  background-color: #19bcdb;
+}
+
+#hero .container .hero-text-wrapper h5 {
+  color: #fff;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  max-width: 40ch;
+  margin: 2rem auto;
+}
+
+#nums {
+  width: 100%;
+  height: auto;
+  background: #19bcdb;
+  text-align: center;
+  color: #fff;
+}
+
+#nums.flex {
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+}
+
+#nums .num h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+#prods-section .pords.flex {
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#prods-section h1 {
+  margin: 3rem 0;
+}
+
+#prods-section .pords.flex .prod {
+  width: 1fr;
+}
+
+#prods-section .pords.flex .prod img {
+  width: 6.25rem;
+}
+
+#prods-section .pords.flex .prod h4 {
+  font-size: 1.5rem;
+  color: #19bcdb;
+}
+
+footer {
+  background-color: #11333a;
+  color: #fff;
+
+  text-align: left;
+}
+
+footer .container {
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+footer h5 {
+  color: #ccc;
+  max-width: 30ch;
+}
+
+footer .footer-item {
+  width: 35%;
+}
+
+footer .footer-item a {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  color: #ccc;
+}
+
+.credit {
+  padding: 0.5rem;
+  font-size: 1rem;
+  background: #012931;
+  color: #9b9999;
+}
+
+@media screen and (max-width: 420px) {
+  nav {
+    width: 100%;
+    height: auto;
+  }
+  nav .container {
+    flex-direction: column;
+  }
+
+  nav .container ul {
+    padding: 0 !important;
+  }
+
+  .num {
+    width: 100%;
+  }
+  .prod {
+    width: 100%;
+  }
+
+  footer .container {
+    padding: 0 1rem;
+  }
+
+  footer .container .footer-item {
+    width: auto;
+  }
+}
