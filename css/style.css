@@ -150,6 +150,12 @@ footer .footer-item a {
 }
 
 @media screen and (max-width: 420px) {
+  #hero {
+    padding: 0.5rem 1rem;
+  }
+  #hero .container .hero-text-wrapper {
+    margin-top: 1rem;
+  }
   nav {
     width: 100%;
     height: auto;
